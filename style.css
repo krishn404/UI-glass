@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+body {
+    background-color: #141821;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.container-custom {
+    width: 1256px;
+    height: 400px;
+    margin-left: 5%;
+    margin-top: 15%;
+    display: flex;
+    background: rgb(255 255 255 / 5%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.3px);
+    border: 1px solid #80808042;
+    overflow: hidden;
+}
+
+.nav-buttons {
+    width: 400px; /* Fixed width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    border-right: 1px solid #80808024;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.nav-button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #80808042;
+    border-radius: 30px;
+    width: 250px;
+    height: 55px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 15px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-buttons button.active {
+    background-color: #7d5fff;
+    color: #ffffff;
+}
+
+.nav-buttons button:hover {
+    background-color: #7d5fff;
+    color: #ffffff;
+}
+
+.content-area {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.content-area h2 {
+    margin-bottom: 15px;
+    width: 50%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content-area p {
+    color: #bbbbbb;
+    font-size: 16px;
+    width: 50%;
+}
+
+.content-area ul {
+    color: #bbbbbb;
+    font-size: 16px;
+    padding-left: 20px;
+    width: 50%;
+}
+
+.content-area ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+.content-area img {
+    width: 290px;
+    height:280px;
+    border-radius: 50px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 60px;
+    right: 75px;
+}
+
+.content-area .get-started {
+    margin-top: 20px;
+    color: #1C67F2;
+    border: none;
+    padding: 17px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.content-area .get-started:hover {
+    background-color: #1C67F2;
+    color: white;
+}

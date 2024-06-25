@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Work With Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container-custom">
+    <div class="nav-buttons">
+        <button class="nav-button active" onclick="showContent('content1')">Expertise and Experience</button>
+        <button class="nav-button" onclick="showContent('content2')">Quality Workmanship</button>
+        <button class="nav-button" onclick="showContent('content3')">Commitment to Safety</button>
+        <button class="nav-button" onclick="showContent('content4')">Reliability and Consistency</button>
+    </div>
+    <div class="content-area">
+        <div id="content1" class="content">
+            <h2>Expertise and Experience</h2>
+            <p>While Google Ads is undoubtedly a powerful advertising platform, it’s important to recognize that there are various other avenues to effectively display ads. Our team ensures the highest quality of work in all aspects.</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Best Service for You</li>
+                <li><i class="fa-regular fa-circle-check"></i> Keeping Your Team Productive</li>
+                <li><i class="fa-regular fa-circle-check"></i> Predictable Costs 24/7</li>
+            </ul>
+        
+            <button class="btn btn-primary get-started">Get Started</button>
+            <img src="https://img.freepik.com/free-photo/community-young-people-posing-together_23-2148431345.jpg?t=st=1719325420~exp=1719329020~hmac=b5b423ededb94c781daa160bedf2c10bec461259d3928e4cac1dddb978134324&w=826" alt="Quality Workmanship">
+        </div>
+        <div id="content2" class="content" style="display: none;">
+            <h2>Quality Workmanship </h2>
+            <p>While Google Ads is undoubtedly a powerful advertising platform, it’s important to recognize that there are various other avenues to effectively display ads. Our team ensures the highest quality of work in all aspects.</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Best Service for You</li>
+                <li><i class="fa-regular fa-circle-check"></i> Keeping Your Team Productive</li>
+                <li><i class="fa-regular fa-circle-check"></i> Predictable Costs 24/7</li>
+            </ul>
+        
+            <button class="btn btn-primary get-started">Get Started</button>
+            <img src="https://img.freepik.com/premium-photo/business-people-assembling-cogs_394555-1460.jpg?ga=GA1.2.1723781172.1680778197&semt=ais_user" alt="Quality Workmanship">
+        </div>
+        <div id="content3" class="content" style="display: none;">
+            <h2>Commitment to Safety</h2>
+            <p>While Google Ads is undoubtedly a powerful advertising platform, it’s important to recognize that there are various other avenues to effectively display ads. Our team ensures the highest quality of work in all aspects.</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Best Service for You</li>
+                <li><i class="fa-regular fa-circle-check"></i> Keeping Your Team Productive</li>
+                <li><i class="fa-regular fa-circle-check"></i> Predictable Costs 24/7</li>
+            </ul>
+        
+            <button class="btn btn-primary get-started">Get Started</button>
+            <img src="https://media.istockphoto.com/id/1390241095/photo/protection-personal-data-against-hackers-secure-internet-access-and-security-of-personal-data.jpg?s=612x612&w=0&k=20&c=pLBSX8NIGMYspJD9wyVWTLAID0yIWo1wCE0zmaILamA=" alt="Quality Workmanship">
+        </div>
+        <div id="content4" class="content" style="display: none;">
+            <h2>Reliability and Consistency</h2>
+            <p>While Google Ads is undoubtedly a powerful advertising platform, it’s important to recognize that there are various other avenues to effectively display ads. Our team ensures the highest quality of work in all aspects.</p>
+            <ul>
+                <li><i class="fa-regular fa-circle-check"></i> Best Service for You</li>
+                <li><i class="fa-regular fa-circle-check"></i> Keeping Your Team Productive</li>
+                <li><i class="fa-regular fa-circle-check"></i> Predictable Costs 24/7</li>
+            </ul>
+        
+            <button class="btn btn-primary get-started">Get Started</button>
+            <img src="https://img.freepik.com/free-photo/brainstorming-young-team-meeting_329181-9638.jpg?t=st=1719324963~exp=1719328563~hmac=9ee87160ad9e1c5a6061b559b9aaf878b542b15e4529aeae667e89bc34c17f44&w=826" alt="Quality Workmanship">
+        </div>
+    </div>
+</div>
+
+<script>
+    function showContent(contentId) {
+        // Hide all content divs
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+        }
+
+        // Remove active class from all buttons
+        var buttons = document.getElementsByClassName('nav-button');
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].classList.remove('active');
+        }
+
+        // Show the selected content
+        document.getElementById(contentId).style.display = 'block';
+
+        // Add active class to the clicked button
+        event.target.classList.add('active');
+    }
+</script>
+<script src="https://kit.fontawesome.com/c66ff0c923.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
